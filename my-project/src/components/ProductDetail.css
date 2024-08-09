@@ -1,37 +1,24 @@
-/* ProductDetail.css */
+.button-style {
+  background-color: rgb(18, 18, 133); /* Mavi arka plan rengi */
+  color: white; /* Beyaz metin rengi */
+  border: none; /* Sınır yok */
+  padding: 10px 20px; /* İç boşluk */
+  font-size: 16px; /* Yazı boyutu */
+  border-radius: 5px; /* Köşeleri yuvarlat */
+  cursor: pointer; /* Fare imlecini işaretçi yap */
+  transition: background-color 0.3s ease; /* Geçiş efekti */
+}
 
-.product-detail {
-    text-align: center;
-    padding: 20px;
-    background-color: #333; /* Arka plan rengi koyu gri */
-    color: #fff; /* Yazı rengi beyaz */
-  }
-  
-  .product-detail img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .product-detail h1, 
-  .product-detail p {
-    margin: 10px 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  }
-  
-  /* Add to Cart Butonu */
-  .add-to-cart-button {
-    background-color: #007bff; /* Mavi renk */
-    color: #fff; /* Beyaz metin rengi */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .add-to-cart-button:hover {
-    background-color: #0056b3; /* Hover durumunda daha koyu mavi */
-  }
-  
+.button-style:hover {
+  background-color: darkblue; /* Üzerine gelindiğinde renk değişikliği */
+}
+button.add-to-cart-button{
+  background-color: #0d3c6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

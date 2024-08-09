@@ -11,7 +11,7 @@ import ContactUs from './components/ContactUs';
 import Notifications from './components/Notifications';
 import Settings from './components/Settings';
 import Success from './components/Success';
-
+import Pagination from './components/Pagination';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -86,6 +86,7 @@ const App = () => {
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
@@ -149,17 +150,23 @@ const App = () => {
         <Route path="/notifications" element={<><BackButton /><Notifications /></>} />
         <Route path="/settings" element={<><BackButton /><Settings /></>} />
         <Route path="/success" element={<><BackButton /><Success /></>} />
-        <Route path="/product-detail/:id" element={<><BackButton /><ProductDetail products={fake} addToCart={addToCart} /></>} />
-        <Route path="/" element={<>
-          <ProductBox
-            products={currentProducts}
-            addToCart={addToCart}
-            page={currentPage}
-            onPageChange={handlePageChange}
-            totalProducts={filteredProducts.length}
-            productsPerPage={productsPerPage}
-          />
-        </>} />
+        <Route
+          path="/product-detail/:id"
+          element={<><BackButton /><ProductDetail products={fake} addToCart={addToCart} /></>}
+        />
+        <Route
+          path="/"
+          element={
+            <>
+              <ProductBox products={currentProducts} addToCart={addToCart} />
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onPageChange={handlePageChange}
+              />
+            </>
+          }
+        />
       </Routes>
     </Router>
   );
