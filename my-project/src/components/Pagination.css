@@ -1,0 +1,31 @@
+/* src/components/Pagination.css */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Üstten ve alttan boşluk */
+}
+
+.pagination button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 30px; /* Merkezi hizalamak için */
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination .active {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}

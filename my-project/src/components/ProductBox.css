@@ -1,0 +1,72 @@
+/* components/ProductBox.css */
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Beş sütun */
+  gap: 20px; /* Ürünler arasındaki boşluk */
+}
+
+.box {
+  background-color: #e0e0e0; /* Kutular için gri renk */
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Gri tonlu gölge */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: #1a1919;
+  text-align: center; /* Metinleri ortalar */
+}
+
+.box:hover {
+  background-color: #b0b0b0; /* Hover durumunda koyu gri renk */
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /* Hover durumunda daha belirgin gölge */
+}
+
+.product-image {
+  width: 60%; /* Kutunun genişliğine uyum sağlar */
+  height: auto; /* Görselin yüksekliği otomatik ayarlanır */
+  max-height: 150px; /* Maksimum yükseklik sınırı */
+  object-fit: cover; /* Görselin kutuya uyum sağlaması */
+}
+
+.product-title {
+  font-size: 1rem; /* Ürün isminin boyutu */
+  margin-top: 10px; /* Ürün ismi ve görsel arasında boşluk */
+}
+
+.product-price {
+  font-size: 1.2rem; /* Fiyat yazısının boyutu */
+  margin-top: 10px; /* Fiyat ve ürün ismi arasında boşluk */
+}
+
+/* Buton Stili */
+.box button {
+  background-color: #2196F3; /* Mavi arka plan rengi */
+  color: #fff; /* Beyaz metin rengi */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px; /* Butonlar arasında boşluk */
+  transition: background-color 0.3s ease;
+}
+
+.box button:hover {
+  background-color: #1976D2; /* Hover durumunda daha koyu mavi */
+}
+
+.view-details-button {
+  background-color: #2196F3; /* Mavi arka plan rengi */
+  color: #fff; /* Beyaz metin rengi */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px; /* Buton ile diğer elemanlar arasında boşluk */
+  transition: background-color 0.3s ease;
+}
+
+.view-details-button:hover {
+  background-color: #1976D2; /* Hover durumunda daha koyu mavi */
+}
