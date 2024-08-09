@@ -1,4 +1,3 @@
-/* components/ProductBox.css */
 .product-box {
   display: grid; /* Grid düzenini etkinleştir */
   grid-template-columns: repeat(5, 1fr); /* Her satırda 5 ürün olacak şekilde ayarla */
@@ -16,6 +15,7 @@
   text-align: center; /* Metni ortala */
   box-sizing: border-box; /* Sınır ve iç boşluğu kapsa */
   width: 100%; /* Kartın genişliği, grid hücresine uyacak şekilde ayarla */
+  position: relative; /* Konumlandırma için */
 }
 
 .product-card img {
@@ -24,6 +24,26 @@
   height: auto; /* Yüksekliği otomatik olarak ayarla */
   object-fit: cover; /* Görüntü oranını koruyarak sığdırma */
 }
+
+.button-container {
+  position: relative; /* Mesajın butonun üstünde konumlanabilmesi için */
+}
+
+.added-to-cart-message {
+  position: absolute; /* Mesajı butonun üstüne yerleştir */
+  top: -30px; /* Butonun üstüne biraz kaydır */
+  left: 50%; /* Ortalamak için */
+  transform: translateX(-50%); /* Ortalamayı sağla */
+  background-color: #d4edda; /* Yeşil arka plan rengi */
+  color: #155724; /* Yeşil metin rengi */
+  padding: 5px 10px; /* İç boşluk */
+  border-radius: 5px; /* Yuvarlatılmış köşeler */
+  font-size: 0.875rem; /* Küçük metin boyutu */
+  display: inline-block; /* Satır içi kutu */
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Görünürlük geçiş efekti */
+}
+
 
 /* components/Pagination.css */
 .pagination-container {

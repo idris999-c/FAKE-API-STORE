@@ -22,3 +22,57 @@ button.add-to-cart-button{
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-detail img {
+  max-width: 300px; /* Resmin maksimum genişliği */
+  height: auto; /* Yüksekliği otomatik olarak ayarla */
+  margin-bottom: 20px;
+}
+
+.product-detail h1 {
+  margin-bottom: 10px;
+}
+
+.product-detail p {
+  margin-bottom: 15px;
+}
+
+.button-container {
+  position: relative; /* Mesajın butonun üstünde konumlanabilmesi için */
+}
+
+.add-to-cart-button {
+  background-color: #0d3c6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #003d6a; /* Üzerine gelindiğinde renk değişikliği */
+}
+
+.added-to-cart-message {
+  position: absolute; /* Mesajı butonun üstüne yerleştir */
+  top: -30px; /* Butonun üstüne biraz kaydır */
+  left: 50%; /* Ortalamak için */
+  transform: translateX(-50%); /* Ortalamayı sağla */
+  background-color: #d4edda; /* Yeşil arka plan rengi */
+  color: #155724; /* Yeşil metin rengi */
+  padding: 5px 10px; /* İç boşluk */
+  border-radius: 5px; /* Yuvarlatılmış köşeler */
+  font-size: 0.875rem; /* Küçük metin boyutu */
+  display: inline-block; /* Satır içi kutu */
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Görünürlük geçiş efekti */
+}
