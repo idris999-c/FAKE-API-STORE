@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center; /* Ortalar */
   padding: 10px 20px;
-  background-color: #f8f9fa;
+  background-color: #faf9f8;
   border-bottom: 1px solid #dee2e6;
   position: relative;
 }
