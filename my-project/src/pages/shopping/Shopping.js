@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // useNavigate hook'u ile yönlendirme
+import './Shopping.css';
 
 const Shopping = ({ cart }) => {
   const [cartItems, setCartItems] = useState([]);

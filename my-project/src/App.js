@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import ProductDetail from './components/ProductDetail';
-import ProductBox from './components/ProductBox';
-import SignIn from './components/SignIn';
-import SignUp from './components/SignUp';
-import Profile from './components/Profile';
-import Shopping from './components/Shopping';
-import ContactUs from './components/ContactUs';
-import Notifications from './components/Notifications';
-import Settings from './components/Settings';
-import Success from './components/Success';
-import Pagination from './components/Pagination';
+import ProductDetail from './components/producdetail/ProductDetail';
+import ProductBox from './components/productbox/ProductBox';
+import SignIn from './pages/signin/SignIn';
+import SignUp from './pages/signup/SignUp';
+import Profile from './components/profile/Profile';
+import Shopping from './pages/shopping/Shopping';
+import ContactUs from './components/contactus/ContactUs';
+import Notifications from './components/notifications/Notifications';
+import Settings from './components/settings/Settings';
+import Success from './pages/success/Success';
+import Pagination from './components/pagination/Pagination';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -28,6 +28,7 @@ import ContactMailIcon from '@mui/icons-material/ContactMail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import SettingsIcon from '@mui/icons-material/Settings';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
 
 const App = () => {
   const [fake, setFake] = useState([]);

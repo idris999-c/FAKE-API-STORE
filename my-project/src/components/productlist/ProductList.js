@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductList from './components/ProductList';
+import "./ProductList.css";
 
 function App() {
   return (

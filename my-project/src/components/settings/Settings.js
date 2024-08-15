@@ -1,5 +1,6 @@
 // src/components/Settings.js
 import React from 'react';
+import "./settings.css";
 
 const Settings = () => {
   return (

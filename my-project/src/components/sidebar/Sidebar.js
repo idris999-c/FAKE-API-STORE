@@ -7,6 +7,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';  // Burayı kontrol edin
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import "./sidebar.css";
 
 const Sidebar = () => {
   return (

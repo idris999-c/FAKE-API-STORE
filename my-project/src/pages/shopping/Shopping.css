@@ -1,0 +1,93 @@
+/* Shopping Sayfası */
+.shopping-container {
+  padding: 20px; /* İç boşluk: 20px */
+}
+
+.cart-items {
+  display: flex; /* Flexbox düzeni kullanır */
+  flex-direction: column; /* Dikeyde hizalar */
+}
+
+.cart-item {
+  display: flex; /* Flexbox düzeni kullanır */
+  align-items: center; /* Elemanları ortalar */
+  margin-bottom: 20px; /* Alt boşluk: 20px */
+  background-color: #fff; /* Beyaz arka plan rengi */
+  padding: 5px; /* İç boşluk: 15px */
+  border-radius: 5px; /* Köşe yuvarlaklığı: 5px */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.cart-item-image {
+  width: 150px; /* Görsel genişliği */
+  height: 150px; /* Görsel yüksekliği */
+  object-fit: cover; /* Görselin kapsayıcıya uygun şekilde kesilmesini sağlar */
+  margin-right: 25px; /* Sağdan 25px boşluk bırakır */
+}
+
+.cart-item-details {
+  flex: 1; /* Kalan alanı kaplar */
+}
+
+.quantity-controls {
+  display: flex; /* Flexbox düzeni kullanır */
+  align-items: center; /* Elemanları ortalar */
+  margin: 10px 0; /* Üst ve alt boşluk: 10px */
+}
+
+.quantity-controls button {
+  background-color: #ddd; /* Açık gri arka plan rengi */
+  border: none; /* Sınır yok */
+  padding: 5px 10px; /* İç boşluk: 5px üst ve alt, 10px sağ ve sol */
+  margin: 0 5px; /* Sağdan ve soldan 5px boşluk bırakır */
+  cursor: pointer; /* Tıklanabilir olduğunu belirtir */
+}
+
+.quantity-controls span {
+  font-size: 1.2rem; /* Font boyutu: 1.2rem */
+  margin: 0 5px; /* Sağdan ve soldan 5px boşluk bırakır */
+}
+
+.total-price {
+  position: fixed; /* Sabit konumlandırma */
+  bottom: 20px; /* Alttan 20px uzaklık */
+  right: 20px; /* Sağdan 20px uzaklık */
+  background-color: #fff; /* Beyaz arka plan rengi */
+  padding: 15px; /* İç boşluk: 15px */
+  border-radius: 5px; /* Köşe yuvarlaklığı: 5px */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.continue-button {
+  background-color: #28a745; /* Yeşil arka plan rengi */
+  color: #fff; /* Beyaz metin rengi */
+  border: none; /* Sınır yok */
+  border-radius: 4px; /* Köşe yuvarlaklığı: 4px */
+  padding: 10px 20px; /* İç boşluk: 10px üst ve alt, 20px sağ ve sol */
+  cursor: pointer; /* Tıklanabilir olduğunu belirtir */
+  margin-top: 20px; /* Üstten 20px boşluk bırakır */
+  font-size: 1rem; /* Font boyutu: 1rem */
+  text-align: center; /* Metni ortalar */
+}
+
+.continue-button:hover {
+  background-color: #218838; /* Hover durumunda daha koyu yeşil arka plan rengi */
+}
+
+.remove-button {
+  background-color: #ff4d4d; /* Kırmızı arka plan rengi */
+  color: #fff; /* Beyaz metin rengi */
+  border: none; /* Sınır yok */
+  border-radius: 50%; /* Tam yuvarlak köşeler */
+  width: 30px; /* Buton genişliği */
+  height: 30px; /* Buton yüksekliği */
+  display: flex; /* Flexbox düzeni kullanır */
+  align-items: center; /* İçeriği ortalar */
+  justify-content: center; /* İçeriği ortalar */
+  cursor: pointer; /* Tıklanabilir olduğunu belirtir */
+  font-size: 1.2rem; /* Font boyutu: 1.2rem */
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a; /* Hover durumunda daha koyu kırmızı arka plan rengi */
+}

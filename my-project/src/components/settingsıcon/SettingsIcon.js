@@ -1,7 +1,6 @@
-// src/components/SettingsIcon.js
-
 import * as React from 'react';
 import SvgIcon from '@mui/material/SvgIcon';
+import "./settingsicon.css";
 
 const SettingsIcon = (props) => {
   return (
