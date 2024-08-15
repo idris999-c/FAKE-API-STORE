@@ -39,7 +39,7 @@ const ProductBox = ({ products, addToCart }) => {
           <p>${product.price}</p>
           <Link to={`/product-detail/${product.id}`}>
             <motion.button
-              className="button-style"
+              className="button-style-view"
               whileTap={{ scale: 0.95 }} // Tıklama animasyonu
             >
               View Details
@@ -47,7 +47,7 @@ const ProductBox = ({ products, addToCart }) => {
           </Link>
           <motion.div className="button-container">
             <motion.button
-              className="button-style"
+              className="button-style-add"
               onClick={() => handleAddToCart(product)}
               whileTap={{ scale: 0.95 }} // Tıklama animasyonu
               disabled={cartStatus[product.id]?.adding} // Butonun tekrar tıklanmasını engelle

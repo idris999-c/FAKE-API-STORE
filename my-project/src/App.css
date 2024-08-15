@@ -80,19 +80,3 @@ h1, h2, h3, h4, h5, h6 {
   width: 300px; /* Arama kutusunun genişliği */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti */
 }
-/* View Details Butonu Stili */
-.view-details-button {
-  background-color: #2196F3; /* Mavi arka plan rengi */
-  color: #fff; /* Beyaz metin rengi */
-  border: none; /* Sınır yok */
-  border-radius: 4px; /* Köşe yuvarlaklığı: 4px */
-  padding: 10px 20px; /* İç boşluk: 10px üst ve alt, 20px sağ ve sol */
-  cursor: pointer; /* Tıklanabilir olduğunu belirtir */
-  font-size: 1rem; /* Font boyutu: 1rem */
-  text-align: center; /* Metni ortalar */
-  transition: background-color 0.3s ease; /* Arka plan rengi değişimi için geçiş efekti */
-}
-
-.view-details-button:hover {
-  background-color: #1976D2; /* Hover durumunda daha koyu mavi arka plan rengi */
-}

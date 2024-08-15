@@ -4,7 +4,6 @@
   gap: 16px; /* Ürünler arasındaki boşluk */
   justify-content: center; /* Ürünleri ortala */
   margin: 0 auto; /* Orta hizalama */
-  max-width: 1000px; /* Maksimum genişlik (isteğe bağlı) */
 }
 
 .product-card {
@@ -32,7 +31,7 @@
 .added-to-cart-message {
   position: absolute; /* Mesajı butonun üstüne yerleştir */
   top: -30px; /* Butonun üstüne biraz kaydır */
-  left: 50%; /* Ortalamak için */
+  left: 43%; /* Ortalamak için */
   transform: translateX(-50%); /* Ortalamayı sağla */
   background-color: #d4edda; /* Yeşil arka plan rengi */
   color: #155724; /* Yeşil metin rengi */
@@ -45,35 +44,36 @@
 }
 
 
-/* components/Pagination.css */
-.pagination-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+/* View Details Butonu Stili */
+.button-style-view {
+  background-color: #2196F3; /* Mavi arka plan rengi */
+  color: #fff; /* Beyaz metin rengi */
+  border: none; /* Sınır yok */
+  border-radius: 4px; /* Köşe yuvarlaklığı: 4px */
+  padding: 10px 20px; /* İç boşluk: 10px üst ve alt, 20px sağ ve sol */
+  cursor: pointer; /* Tıklanabilir olduğunu belirtir */
+  font-size: 1rem; /* Font boyutu: 1rem */
+  text-align: center; /* Metni ortalar */
+  transition: background-color 0.3s ease; /* Arka plan rengi değişimi için geçiş efekti */
 }
 
-.pagination-button {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  padding: 10px 15px;
-  margin: 0 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.button-style-view:hover {
+  background-color: #1976D2; /* Hover durumunda daha koyu mavi arka plan rengi */
 }
 
-.pagination-button.active {
-  background-color: #115185;
-  color: #fff;
+.button-style-add {
+  background-color: #2196F3; /* Mavi arka plan rengi */
+  color: #fff; /* Beyaz metin rengi */
+  border: none; /* Sınır yok */
+  border-radius: 4px; /* Köşe yuvarlaklığı: 4px */
+  padding: 10px 20px; /* İç boşluk: 10px üst ve alt, 20px sağ ve sol */
+  cursor: pointer; /* Tıklanabilir olduğunu belirtir */
+  font-size: 1rem; /* Font boyutu: 1rem */
+  text-align: center; /* Metni ortalar */
+  transition: background-color 0.3s ease; /* Arka plan rengi değişimi için geçiş efekti */
+  margin-left: 40px;
 }
 
-.pagination-button:hover {
-  background-color: #ddd;
-}
-
-.pagination-button:disabled {
-  background-color: #e0e0e0;
-  cursor: not-allowed;
+.button-style-add:hover {
+  background-color: #1976D2; /* Hover durumunda daha koyu mavi arka plan rengi */
 }

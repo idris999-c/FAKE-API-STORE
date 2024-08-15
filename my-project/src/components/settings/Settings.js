@@ -4,9 +4,8 @@ import "./settings.css";
 
 const Settings = () => {
   return (
-    <div>
+    <div className='settings'>
       <h1>Welcome to Settings</h1>
-      {/* Settings content goes here */}
     </div>
   );
 };

@@ -3,16 +3,8 @@ import "./success.css";
 
 const Success = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-        backgroundColor: '#f0f0f0',
-      }}
-    >
-      <h1 style={{ color: 'green' }}>Well done!</h1>
+    <div className='text' >
+      <h1>Well done!</h1>
     </div>
   );
 };

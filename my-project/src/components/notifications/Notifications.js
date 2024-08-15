@@ -4,9 +4,8 @@ import "./notifications.css";
 
 const Notifications = () => {
   return (
-    <div>
+    <div className='text'>
       <h1>Welcome to Notifications</h1>
-      {/* Notifications content goes here */}
     </div>
   );
 };

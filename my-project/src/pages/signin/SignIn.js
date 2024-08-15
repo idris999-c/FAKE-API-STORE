@@ -3,7 +3,7 @@ import "./signin.css";
 
 const SignIn = () => {
   return (
-    <div className="sign-page">
+    <div className="signup-page">
       <h1>Welcome to Sign In</h1>
     </div>
   );

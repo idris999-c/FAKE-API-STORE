@@ -4,9 +4,8 @@ import "./profile.css";
 
 const Profile = () => {
   return (
-    <div>
+    <div className='profile'>
       <h1>Welcome to Profile</h1>
-      {/* Profile content goes here */}
     </div>
   );
 };

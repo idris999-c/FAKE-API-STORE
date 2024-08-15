@@ -1,0 +1,31 @@
+/* components/Pagination.css */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .pagination-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .pagination-button.active {
+    background-color: #2196F3;
+    color: white;
+    border-color: #1976D2;
+  }
+  
+  .pagination-button:disabled {
+    cursor: not-allowed;
+    background-color: #e9ecef;
+    border-color: #e9ecef;
+  }
+  

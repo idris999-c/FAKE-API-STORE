@@ -1,4 +1,3 @@
-// components/Pagination.js
 import React from 'react';
 import './Pagination.css'; // Stil dosyasını oluşturacağız
 

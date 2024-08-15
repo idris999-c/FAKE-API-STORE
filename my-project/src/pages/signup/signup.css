@@ -1,0 +1,8 @@
+.sign-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #f0f0f0;
+    color: green;
+}

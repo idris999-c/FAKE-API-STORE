@@ -21,7 +21,7 @@
 .cart-item-image {
   width: 150px; /* Görsel genişliği */
   height: 150px; /* Görsel yüksekliği */
-  object-fit: cover; /* Görselin kapsayıcıya uygun şekilde kesilmesini sağlar */
+ object-fit: contain; /* Görselin kapsayıcıya uygun şekilde kesilmesini sağlar */
   margin-right: 25px; /* Sağdan 25px boşluk bırakır */
 }
 
