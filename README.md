@@ -1,5 +1,6 @@
 # What is this project?
 This project is a fake api store.
+![Ekran görüntüsü 2024-08-15 155531](https://github.com/user-attachments/assets/e5d0e27f-7810-4fc6-8846-2f2b5123a1ea)
 
 # What purpose does it serve?
 It is a web site store where people can shop.
