@@ -15,6 +15,7 @@
   box-sizing: border-box; /* Sınır ve iç boşluğu kapsa */
   width: 100%; /* Kartın genişliği, grid hücresine uyacak şekilde ayarla */
   position: relative; /* Konumlandırma için */
+
 }
 
 .product-card img {
@@ -30,11 +31,10 @@
 
 .added-to-cart-message {
   position: absolute; /* Mesajı butonun üstüne yerleştir */
-  top: -30px; /* Butonun üstüne biraz kaydır */
-  left: 43%; /* Ortalamak için */
+  left: 50%; /* Ortalamak için */
   transform: translateX(-50%); /* Ortalamayı sağla */
-  background-color: #d4edda; /* Yeşil arka plan rengi */
-  color: #155724; /* Yeşil metin rengi */
+  background-color: #122015; /* Yeşil arka plan rengi */
+  color: #6b706c; /* Yeşil metin rengi */
   padding: 5px 10px; /* İç boşluk */
   border-radius: 5px; /* Yuvarlatılmış köşeler */
   font-size: 0.875rem; /* Küçük metin boyutu */
@@ -71,7 +71,6 @@
   font-size: 1rem; /* Font boyutu: 1rem */
   text-align: center; /* Metni ortalar */
   transition: background-color 0.3s ease; /* Arka plan rengi değişimi için geçiş efekti */
-  margin-left: 40px;
 }
 
 .button-style-add:hover {

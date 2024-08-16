@@ -1,6 +1,6 @@
 /* Genel Stiller */
 body {
-  background-color: #f0f0f0; /* Arka plan rengi: açık gri */
+  background-color: #d63535; /* Arka plan rengi: açık gri */
   color: #1a1919; /* Metin rengi: koyu gri */
   margin: 0; /* Margin sıfır, tüm kenar boşluklarını kaldırır */
   padding: 0; /* Padding sıfır, iç boşlukları kaldırır */
@@ -18,8 +18,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column; /* Elemanları dikeyde hizalar */
   align-items: center; /* Elemanları yatayda ortalar */
   padding: 10px 20px; /* Üst ve alt 10px, sağ ve sol 20px padding */
-  background-color: #faf9f8; /* Açık krem rengi arka plan */
-  border-bottom: 1px solid #dee2e6; /* Alt sınır için gri renkli ince çizgi */
   position: relative; /* Konumlandırmayı mümkün kılar */
 }
 
@@ -41,27 +39,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 10px; /* Üstten 10px uzaklık */
   right: 20px; /* Sağdan 20px uzaklık */
   display: flex; /* Flexbox düzeni kullanır */
-  gap: 10px; /* Butonlar arasındaki boşluk */
-}
-
-/* Container ve Kutular */
-.container {
-  max-width: 1150px; /* Maksimum genişlik */
-  margin: 0 auto; /* Ortalar */
-  display: grid; /* Grid düzeni kullanır */
-  grid-template-columns: repeat(3, 1fr); /* Üç sütunlu grid düzeni */
-  gap: 30px; /* Sütunlar arasındaki boşluk */
-}
-
-/* Home ve Back Butonları */
-.button-container {
-  display: flex; /* Flexbox düzeni kullanır */
-  flex-direction: column; /* Dikeyde hizalar */
-  align-items: flex-start; /* Sol tarafa hizalar */
-  position: fixed; /* Sabit konumlandırma */
-  top: 16px; /* Üstten 16px uzaklık */
-  left: 16px; /* Soldan 16px uzaklık */
-  z-index: 1000; /* Diğer öğelerin üstünde olmasını sağlar */
   gap: 10px; /* Butonlar arasındaki boşluk */
 }
 

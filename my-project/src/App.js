@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import ProductDetail from './components/producdetail/ProductDetail';
+import ProductDetail from './pages/producdetail/ProductDetail';
 import ProductBox from './components/productbox/ProductBox';
 import SignIn from './pages/signin/SignIn';
 import SignUp from './pages/signup/SignUp';
-import Profile from './components/profile/Profile';
+import Profile from './pages/profile/Profile';
 import Shopping from './pages/shopping/Shopping';
-import ContactUs from './components/contactus/ContactUs';
-import Notifications from './components/notifications/Notifications';
-import Settings from './components/settings/Settings';
+import ContactUs from './pages/contactus/ContactUs';
+import Notifications from './pages/notifications/Notifications';
+import Settings from './pages/settings/Settings';
 import Success from './pages/success/Success';
 import Pagination from './components/pagination/Pagination';
 import Box from '@mui/material/Box';
@@ -151,23 +151,9 @@ const App = () => {
         <Route path="/notifications" element={<><BackButton /><Notifications /></>} />
         <Route path="/settings" element={<><BackButton /><Settings /></>} />
         <Route path="/success" element={<><BackButton /><Success /></>} />
-        <Route
-          path="/product-detail/:id"
-          element={<><BackButton /><ProductDetail products={fake} addToCart={addToCart} /></>}
-        />
-        <Route
-          path="/"
-          element={
-            <>
-              <ProductBox products={currentProducts} addToCart={addToCart} />
-              <Pagination
-                currentPage={currentPage}
-                totalPages={totalPages}
-                onPageChange={handlePageChange}
-              />
-            </>
-          }
-        />
+        <Route path="/product-detail/:id" element={<><BackButton /><ProductDetail products={fake} addToCart={addToCart} /></>} />
+        <Route path="/" element={<><ProductBox products={currentProducts} addToCart={addToCart} /><Pagination
+          currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} /></>} />
       </Routes>
     </Router>
   );
