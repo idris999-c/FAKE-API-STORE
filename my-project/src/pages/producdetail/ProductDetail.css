@@ -44,7 +44,7 @@
 
 .added-to-cart-message {
   position: absolute; /* Mesajı butonun üstüne yerleştir */
-  top: -30px; /* Butonun üstüne biraz kaydır */
+  top: -50px; /* Butonun üstüne biraz kaydır */
   left: 43%; /* Ortalamak için */
   transform: translateX(-50%); /* Ortalamayı sağla */
   background-color: #d4edda; /* Yeşil arka plan rengi */

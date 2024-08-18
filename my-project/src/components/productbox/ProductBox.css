@@ -15,14 +15,17 @@
   box-sizing: border-box; /* Sınır ve iç boşluğu kapsa */
   width: 100%; /* Kartın genişliği, grid hücresine uyacak şekilde ayarla */
   position: relative; /* Konumlandırma için */
-
+  display: flex; /* Flex düzeni */
+  flex-direction: column; /* Ürün içeriği ve butonları dikey olarak hizala */
+  justify-content: space-between; /* İçerik ve butonları kartın en üstü ve en altına yerleştir */
 }
 
 .product-card img {
   width: 100%; /* Kartın genişliğine uyacak şekilde ayarla */
-  max-width: 150px; /* Maksimum genişlik ayarla */
+  max-width: 100px; /* Maksimum genişlik ayarla */
   height: auto; /* Yüksekliği otomatik olarak ayarla */
   object-fit: cover; /* Görüntü oranını koruyarak sığdırma */
+  margin-left: 50px;
 }
 
 .button-container {
@@ -32,6 +35,7 @@
 .added-to-cart-message {
   position: absolute; /* Mesajı butonun üstüne yerleştir */
   left: 50%; /* Ortalamak için */
+  top: -30px;
   transform: translateX(-50%); /* Ortalamayı sağla */
   background-color: #122015; /* Yeşil arka plan rengi */
   color: #6b706c; /* Yeşil metin rengi */

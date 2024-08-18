@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion'; // Framer Motion'u import edin
-import './ProductBox.css'; // CSS dosyasını import edin
+import { motion } from 'framer-motion';
+import './ProductBox.css';
 
 const ProductBox = ({ products, addToCart }) => {
-  const [cartStatus, setCartStatus] = useState({}); // Her ürün için durum yönetimi
+  const [cartStatus, setCartStatus] = useState({});
 
   const handleAddToCart = (product) => {
     if (!cartStatus[product.id]?.adding) {
@@ -14,7 +14,6 @@ const ProductBox = ({ products, addToCart }) => {
       });
       addToCart(product);
 
-      // Geri bildirim mesajını göstermek ve ardından gizlemek için
       setTimeout(() => {
         setCartStatus(prevStatus => ({
           ...prevStatus,
@@ -37,27 +36,27 @@ const ProductBox = ({ products, addToCart }) => {
           <img src={product.image} alt={product.title} />
           <h2>{product.title}</h2>
           <p>${product.price}</p>
-          <Link to={`/product-detail/${product.id}`}>
-            <motion.button
-              className="button-style-view"
-              whileTap={{ scale: 0.95 }} // Tıklama animasyonu
-            >
-              View Details
-            </motion.button>
-          </Link>
-          <motion.div className="button-container">
+          <div className="button-container">
+            <Link to={`/product-detail/${product.id}`}>
+              <motion.button
+                className="button-style-view"
+                whileTap={{ scale: 0.95 }}
+              >
+                View Details
+              </motion.button>
+            </Link>
             <motion.button
               className="button-style-add"
               onClick={() => handleAddToCart(product)}
-              whileTap={{ scale: 0.95 }} // Tıklama animasyonu
-              disabled={cartStatus[product.id]?.adding} // Butonun tekrar tıklanmasını engelle
+              whileTap={{ scale: 0.95 }}
+              disabled={cartStatus[product.id]?.adding}
             >
               Add to Cart
             </motion.button>
             {cartStatus[product.id]?.adding && (
               <div className="added-to-cart-message">Added to Cart</div>
             )}
-          </motion.div>
+          </div>
         </motion.div>
       ))}
     </div>
