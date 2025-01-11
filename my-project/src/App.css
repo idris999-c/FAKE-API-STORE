@@ -1,6 +1,6 @@
 /* Genel Stiller */
 body {
-  background-color: #d63535; /* Arka plan rengi: açık gri */
+  background-image: url('C:\Users\idris\Desktop\react\my-project\src\assets\img.1.png');
   color: #1a1919; /* Metin rengi: koyu gri */
   margin: 0; /* Margin sıfır, tüm kenar boşluklarını kaldırır */
   padding: 0; /* Padding sıfır, iç boşlukları kaldırır */
@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 20px; /* Sağdan 20px uzaklık */
   display: flex; /* Flexbox düzeni kullanır */
   gap: 10px; /* Butonlar arasındaki boşluk */
+
 }
 
 /* Arama Formu */
